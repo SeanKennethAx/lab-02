@@ -1,0 +1,150 @@
+    * { 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    header { 
+        background-color: #333333;
+    }
+    .hireMe-btn {
+        background-color: #707070;  
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: opacity 1s;
+    }
+    .hireMe-btn:hover {  
+        opacity: 0.8;
+    }
+    .hireMe-btn:active { 
+        opacity: 0.4;
+    }
+
+    .navBar { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 80px;
+    }
+    .logoName { 
+        font-size: 20px;
+        color: white; 
+        font-weight: bold;  
+    }
+    a { 
+        font-weight: 500;
+        text-decoration: none;
+        text-align: center;
+        margin-right: 50px;
+        justify-content: center;
+        color: white;
+        transition: color 1s;
+    }
+    a:hover { 
+        color: rgb(161, 161, 161);
+    }
+    .hero {
+        display: flex;
+        align-items: center;      
+        justify-content: space-between; 
+        gap: 40px;                
+        padding: 60px 80px;       
+        max-width: 1200px;
+        margin: 0 auto;           
+}
+    .heroContent { 
+        max-width: 600px;
+        text-align: left;
+    }
+    .myName, .heroContent h1, .description { 
+        text-align: left;
+    }
+    .myName { 
+        color: #ffffff;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .heroContent h1 { 
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .heroContent h1 span {
+        color: #ddd;
+    }
+    .description { 
+        color: #ffffff;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        font-size: 20px;
+        justify-content: space-between;
+        text-align: justify;
+    }
+    .buttons { 
+        display: flex;
+        gap: 15px;
+        justify-content: center; 
+        margin-top: 20px;       
+}
+    .btnPrimary { 
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: #333333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: opacity 1s;
+    }
+    .btnPrimary:hover { 
+        opacity: 0.8;
+    }
+    .btnSecondary {     
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: #333333;
+        color: white;
+        border: none;
+        cursor: pointer;  
+        transition: opacity 1s;  
+    }
+    .btnSecondary:hover { 
+        opacity: 0.8;
+    }
+    body {
+        background-color: #707070;
+    }
+    .heroImage img { 
+        width: 350px;           
+        height: auto;
+        border-radius: 250px;
+        object-fit: cover
+    }
+    .btn {
+        padding: 12px 24px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
