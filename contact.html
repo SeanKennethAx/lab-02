@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seyanism</title>
+    <link rel="icon" type="image/x-con" href="icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#23354d] text-white">
+    <header class="bg-[#0B1C2D]">
+        <div class="flex items-center justify-between py-5 px-8 lg:px-20">
+            <div class="text-[22px] font-bold text-white">Seyanism.</div>
+
+            <nav class="hidden md:block">
+                <a href="index.html"
+                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">Home</a>
+                <a href="#"
+                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">About</a>
+                <a href="#"
+                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">Projects</a>
+                <a href="contact.html"
+                    class="text-white font-medium mr-5 transition-colors duration-300 hover:text-[#00D4FF]">Contact</a>
+                <a href="submissions.html"
+                    class="text-white font-medium transition-colors duration-300 hover:text-[#00D4FF]">Submissions</a>
+            </nav>
+
+            <button class="bg-[#3A86FF] text-white text-[15px] font-semibold px-[22px] py-2 rounded-full
+               transition-all duration-300 hover:bg-[#00D4FF] hover:-translate-y-0.5">
+                Hire me
+            </button>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-14
+           px-8 lg:px-20 py-16 lg:py-20">
+        <form id="contactForm" class="w-full p-8">
+            <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                    <label for="firstName" class="block text-sm font-medium mb-2">First Name</label>
+                    <input id="firstName" name="firstName" type="text" required
+                        class="w-full rounded-xl px-4 py-3 text-[#0B1C2D] outline-none focus:ring-2 focus:ring-[#00D4FF]"
+                        placeholder="John" />
+                </div>
+
+                <div>
+                    <label for="lastName" class="block text-sm font-medium mb-2">Last Name</label>
+                    <input id="lastName" name="lastName" type="text" required
+                        class="w-full rounded-xl px-4 py-3 text-[#0B1C2D] outline-none focus:ring-2 focus:ring-[#00D4FF]"
+                        placeholder="Doe" />
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                <input id="email" name="email" type="email" required
+                    class="w-full rounded-xl px-4 py-3 text-[#0B1C2D] outline-none focus:ring-2 focus:ring-[#00D4FF]"
+                    placeholder="john@example.com" />
+            </div>
+
+            <div class="mt-5">
+                <label for="contactNumber" class="block text-sm font-medium mb-2">Contact Number</label>
+                <input id="contactNumber" name="contactNumber" type="tel" inputmode="tel" required
+                    class="w-full rounded-xl px-4 py-3 text-[#0B1C2D] outline-none focus:ring-2 focus:ring-[#00D4FF]"
+                    placeholder="+63 9XX XXX XXXX" />
+                <p class="text-xs text-white/70 mt-2">Tip: Include country code if possible.</p>
+            </div>
+
+            <div class="mt-7 flex items-center gap-4">
+                <button type="submit" class="bg-[#3A86FF] text-white text-[15px] font-semibold px-[22px] py-3 rounded-full
+             transition-all duration-300 hover:bg-[#00D4FF] hover:-translate-y-0.5">
+                    Submit
+                </button>
+            </div>
+
+            <p id="statusMsg" class="mt-5 text-sm"></p>
+        </form>
+
+    </section>
+
+    <footer></footer>
+    <script src="js/contact.js" defer></script>
+</body>
+
+</html>

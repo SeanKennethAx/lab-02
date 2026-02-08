@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seyanism - Submissions</title>
+    <link rel="icon" type="image/x-con" href="icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#23354d] text-white">
+
+    <!-- HEADER -->
+    <header class="bg-[#0B1C2D]">
+        <div class="flex items-center justify-between py-5 px-8 lg:px-20">
+
+            <div class="text-[22px] font-bold text-white">
+                Seyanism.
+            </div>
+
+            <nav class="hidden md:block">
+                <a href="index.html"
+                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">
+                    Home
+                </a>
+
+                <a href="#"
+                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">
+                    About
+                </a>
+
+                <a href="#"
+                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">
+                    Projects
+                </a>
+
+                <a href="contact.html"
+                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">
+                    Contact
+                </a>
+
+                <a href="submissions.html"
+                    class="text-white font-medium transition-colors duration-300 hover:text-[#00D4FF]">
+                    Submissions
+                </a>
+            </nav>
+
+            <button
+                class="bg-[#3A86FF] text-white text-[15px] font-semibold px-[22px] py-2 rounded-full transition-all duration-300 hover:bg-[#00D4FF] hover:-translate-y-0.5"
+                onclick="window.location.href='contact.html'">
+                Hire me
+            </button>
+
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="max-w-7xl mx-auto px-8 lg:px-20 py-16 lg:py-20">
+
+        <div class="flex flex-col gap-6">
+
+            <!-- TITLE + BUTTONS -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+
+                <div>
+                    <h1 class="text-3xl font-bold">
+                        Saved Contact Submissions
+                    </h1>
+
+                    <p class="text-white/70 mt-2">
+                        Data is loaded from
+                        <span class="font-semibold">localStorage</span>
+                        key:
+                        <span class="font-mono">contactSubmissions</span>
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-3">
+
+                    <button id="refreshBtn"
+                        class="bg-[#3A86FF] text-white text-[15px] font-semibold px-[18px] py-2 rounded-full transition-all duration-300 hover:bg-[#00D4FF] hover:-translate-y-0.5">
+                        Refresh
+                    </button>
+
+                    <button id="clearBtn"
+                        class="text-white/90 px-4 py-2 rounded-full border border-white/20 hover:border-white/40 transition">
+                        Clear saved
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- TABLE -->
+            <div class="bg-[#0B1C2D] rounded-2xl shadow-lg overflow-hidden">
+
+                <div class="overflow-x-auto">
+
+                    <table class="min-w-full text-left">
+
+                        <thead class="bg-white/5">
+                            <tr>
+                                <th class="px-5 py-4 text-sm font-semibold">#</th>
+                                <th class="px-5 py-4 text-sm font-semibold">First Name</th>
+                                <th class="px-5 py-4 text-sm font-semibold">Last Name</th>
+                                <th class="px-5 py-4 text-sm font-semibold">Email</th>
+                                <th class="px-5 py-4 text-sm font-semibold">Contact Number</th>
+                                <th class="px-5 py-4 text-sm font-semibold">Submitted At</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tableBody" class="divide-y divide-white/10">
+                            <!-- JS injects rows -->
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="px-5 py-4">
+                    <p id="statusMsg" class="text-sm text-white/70"></p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer></footer>
+    <script src="js/submissions.js" defer></script>
+</body>
+
+</html>

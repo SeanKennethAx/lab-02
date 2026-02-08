@@ -2,78 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Seyanism </title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="icon" type="image/x-con" href="seyanIcon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seyanism</title>
+    <link rel="icon" type="image/x-con" href="icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <header class="navBar">
-        <div class="logoName"> Seyanism. </div>
-        <nav>
-            <a href="#"> Home </a>
-            <a href="#"> About </a>
-            <a href="#"> Projects </a>
-            <a href="#"> Contact </a>
-        </nav>
-        <button class="hireMe-btn"> Hire me </button>
+<body class="bg-[#23354d] text-white">
+    <header class="bg-[#0B1C2D]">
+        <div class="flex items-center justify-between py-5 px-8 lg:px-20">
+            <div class="text-[22px] font-bold text-white">Seyanism.</div>
 
+            <nav class="hidden md:block">
+                <a href="#"
+                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">Home</a>
+                <a href="#"
+                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">About</a>
+                <a href="#"
+                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">Projects</a>
+                <a href="contact.html"
+                    class="text-white font-medium mr-5 transition-colors duration-300 hover:text-[#00D4FF]">Contact</a>
+                <a href="submissions.html"
+                    class="text-white font-medium transition-colors duration-300 hover:text-[#00D4FF]">Submissions</a>
+            </nav>
+
+            <button class="bg-[#3A86FF] text-white text-[15px] font-semibold px-[22px] py-2 rounded-full
+               transition-all duration-300 hover:bg-[#00D4FF] hover:-translate-y-0.5">
+                Hire me
+            </button>
+        </div>
     </header>
 
-    <section class="hero">
-        <div class="heroContent">
-            <p class="myName"> Hi, I'm <span class="myNameSpan"> Sean Kenneth H. Axalan </span> </p>
-
-            <h1 class="mySkills">
-                Web Developer <span class="mySkillSpan"> UI/UX Designer. </span>
-            </h1>
-            
-            
-            <p class="description">
-                I am a passionate web developer with experience building responsive, user-friendly websites and applications. My expertise spans front-end and back-end technologies, with a focus on creating clean, efficient code and seamless digital experiences. I specialize in modern frameworks and tools to deliver scalable solutions that balance performance with design.
+    <section class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-14
+           px-8 lg:px-20 py-16 lg:py-20">
+        <div class="max-w-3xl mt-10 lg:mt-[100px]">
+            <p class="text-[32px] font-bold mb-[50px]">
+                Hi, I'm
+                <span class="text-white">Sean Kenneth H. Axalan</span>
             </p>
-            
+            <h1 class="text-lg text-[#B0BEC5] mb-5">
+                Web Developer <span class="text-[#00D4FF]">UI/UX Designer.</span>
+            </h1>
+            <p class="text-lg leading-[1.7] text-[#B0BEC5] mb-[35px] text-justify">
+                I am a passionate web developer with experience building responsive, user-friendly websites and
+                applications.
+                My expertise spans front-end and back-end technologies, with a focus on creating clean, efficient code
+                and seamless
+                digital experiences. I specialize in modern frameworks and tools to deliver scalable solutions that
+                balance performance
+                with design.
+            </p>
+            <div class="flex flex-wrap gap-5 lg:justify-start justify-center">
+                <button class="px-7 py-3 text-[13px] font-semibold rounded-[30px] bg-[#3A86FF] text-white border-0
+                 transition-all duration-300 hover:-translate-y-[3px]
+                 hover:shadow-[0_10px_25px_rgba(58,134,255,0.4)]">
+                    My Projects
+                </button>
 
-            <div class="buttons">
-                <button class="btnPrimary"> My Projects </button>
-                <button class="btnSecondary"> My Resume </button>
-            </div> 
+                <button class="px-7 py-3 text-base font-semibold rounded-[30px] bg-transparent text-[#3A86FF]
+                 border-2 border-[#3A86FF] transition-all duration-300
+                 hover:bg-[#3A86FF] hover:text-white">
+                    My Resume
+                </button>
+            </div>
         </div>
 
-        <div class="heroImage">
-            <img src="profilePicture.jpg" alt="ProfilePicture">
-            <ul id="social-test">
-                <li>
-                    <a href="https://www.facebook.com/seyanzxc/" target="_blank">
+        <div class="flex flex-col items-center mt-10 lg:mt-[75px]">
+            <img src="profile.jpg" alt="ProfilePicture" class="w-full h-auto object-cover rounded-xl border-4 border-[#3A86FF]
+               shadow-[0_15px_40px_rgba(0,0,0,0.4)]" />
+
+            <ul class="mt-[15px] p-0 flex justify-center gap-5">
+                <li class="list-none w-[45px] h-[45px] rounded-[10px] cursor-pointer text-[20px]
+                 flex items-center justify-center
+                 transition-all duration-300 hover:-translate-y-[3px]
+                 hover:shadow-[0_10px_25px_rgba(58,134,255,0.4)] hover:text-[#3A86FF]">
+                    <a class="w-full h-full flex items-center justify-center no-underline text-inherit"
+                        href="https://www.facebook.com/seyanzxc/" target="_blank" rel="noreferrer">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                 </li>
 
-                <li>
-                    <a href="https://www.instagram.com/seyanism/" target="_blank">
+                <li class="list-none w-[45px] h-[45px] rounded-[10px] cursor-pointer text-[20px]
+                 flex items-center justify-center
+                 transition-all duration-300 hover:-translate-y-[3px]
+                 hover:shadow-[0_10px_25px_rgba(58,134,255,0.4)] hover:text-[#3A86FF]">
+                    <a class="w-full h-full flex items-center justify-center no-underline text-inherit"
+                        href="https://www.instagram.com/seyanism/" target="_blank" rel="noreferrer">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </li>
-                
-                <li>
-                    <a href="https://github.com/SeanKennethAx" target="_blank">
+
+                <li class="list-none w-[45px] h-[45px] rounded-[10px] cursor-pointer text-[20px]
+                 flex items-center justify-center
+                 transition-all duration-300 hover:-translate-y-[3px]
+                 hover:shadow-[0_10px_25px_rgba(58,134,255,0.4)] hover:text-[#3A86FF]">
+                    <a class="w-full h-full flex items-center justify-center no-underline text-inherit"
+                        href="https://github.com/SeanKennethAx" target="_blank" rel="noreferrer">
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </a>
                 </li>
             </ul>
         </div>
-        
     </section>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
 </body>
 
 </html>
