@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seyanism</title>
-    <link rel="icon" type="image/x-con" href="icon.png" />
+    <link rel="icon" type="image/x-con" href="img/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -20,25 +20,46 @@
         body {
             font-family: "Montserrat", sans-serif;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 
-<body class="bg-[#23354d]">
+<body>
     <header class="bg-[#0B1C2D]">
         <div class="mx-auto max-w-7xl flex items-center justify-between py-5 px-10 lg:px-20">
-            <div class="text-[22px] font-bold text-white">Seyanism.</div>
+            <div class="text-xl font-bold text-white">Seyanism.</div>
 
-            <nav class="hidden md:block">
-                <a href="#"
-                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">Home</a>
-                <a href="#"
-                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">About</a>
-                <a href="#"
-                    class="text-white font-medium mr-5 lg:mr-10 transition-colors duration-300 hover:text-[#00D4FF]">Projects</a>
-                <a href="contact.html"
-                    class="text-white font-medium mr-5 transition-colors duration-300 hover:text-[#00D4FF]">Contact</a>
-                <a href="submissions.html"
-                    class="text-white font-medium transition-colors duration-300 hover:text-[#00D4FF]">Submissions</a>
+            <nav class="hidden md:flex md:gap-x-10">
+                <div>
+                    <a href="#" class="text-white font-medium transition-colors duration-300 hover:text-[#00D4FF]">
+                        Home
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="text-white font-medium transition-colors duration-300 hover:text-[#00D4FF]">
+                        About
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="text-white font-medium transition-colors duration-300 hover:text-[#00D4FF]">
+                        Projects
+                    </a>
+                </div>
+                <div>
+                    <a href="contact.html"
+                        class="text-white font-medium transition-colors duration-300 hover:text-[#00D4FF]">
+                        Contact
+                    </a>
+                </div>
+                <div>
+                    <a href="submissions.html"
+                        class="text-white font-medium transition-colors duration-300 hover:text-[#00D4FF]">
+                        Submissions
+                    </a>
+                </div>
             </nav>
 
             <button class="bg-[#3A86FF] text-white text-[15px] font-semibold px-[22px] py-2 rounded-full
@@ -48,75 +69,82 @@
         </div>
     </header>
 
-    <section class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-14
-           px-8 lg:px-20 py-16 lg:py-20">
-        <div class="max-w-3xl mt-10 lg:mt-[100px]">
-            <p class="text-white text-[32px] font-bold mb-[50px]">
-                Hi, I'm
-                <span class="text-white">Sean Kenneth H. Axalan</span>
-            </p>
-            <h1 class="text-lg text-[#B0BEC5] mb-5">
-                Web Developer <span class="text-[#00D4FF]">UI/UX Designer.</span>
-            </h1>
-            <p class="text-lg leading-[1.7] text-[#B0BEC5] mb-[35px] text-justify">
-                I am a passionate web developer with experience building responsive, user-friendly websites and
-                applications.
-                My expertise spans front-end and back-end technologies, with a focus on creating clean, efficient code
-                and seamless
-                digital experiences. I specialize in modern frameworks and tools to deliver scalable solutions that
-                balance performance
-                with design.
-            </p>
-            <div class="flex flex-wrap gap-5 lg:justify-start justify-center">
-                <button class="px-7 py-3 text-[13px] font-semibold rounded-[30px] bg-[#3A86FF] text-white border-0
-                 transition-all duration-300 hover:-translate-y-[3px]
-                 hover:shadow-[0_10px_25px_rgba(58,134,255,0.4)]">
-                    My Projects
-                </button>
+    <section class="bg-[#0B1C2D]">
+        <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-14
+           px-8 lg:px-20 py-16 lg:py-40">
+            <div class="max-w-3xl space-y-5">
+                <p class="text-white text-3xl font-bold">
+                    Hi, I'm
+                    <span class="text-white">Sean Kenneth H. Axalan</span>
+                </p>
+                <h1 class="text-lg text-[#B0BEC5] mb-5">
+                    Web Developer <span class="text-[#00D4FF]">UI/UX Designer.</span>
+                </h1>
+                <p class="text-lg text-white text-justify">
+                    I am a passionate web developer with experience building responsive, user-friendly websites and
+                    applications.
+                    My expertise spans front-end and back-end technologies, with a focus on creating clean, efficient
+                    code
+                    and seamless
+                    digital experiences. I specialize in modern frameworks and tools to deliver scalable solutions that
+                    balance performance
+                    with design.
+                </p>
+                <div class="flex flex-wrap gap-5 lg:justify-start justify-center">
 
-                <button class="px-7 py-3 text-base font-semibold rounded-[30px] bg-transparent text-[#3A86FF]
+                    <a href="#projects">
+                        <button class="px-8 py-4 text-xs font-semibold rounded-[30px] bg-[#3A86FF] text-white border-0
+                        transition-all duration-300 hover:-translate-y-[3px]
+                        hover:shadow-[0_10px_25px_rgba(58,134,255,0.4)]">
+                            My Projects
+                        </button>
+                    </a>
+
+
+                    <button class="px-8 py-4 text-xs font-semibold rounded-[30px] bg-transparent text-[#3A86FF]
                  border-2 border-[#3A86FF] transition-all duration-300
                  hover:bg-[#3A86FF] hover:text-white">
-                    My Resume
-                </button>
+                        My Resume
+                    </button>
+                </div>
             </div>
-        </div>
 
-        <div class="flex flex-col items-center mt-10 lg:mt-[75px]">
-            <img src="profile.jpg" alt="ProfilePicture" class="w-full h-auto object-cover rounded-xl border-4 border-[#3A86FF]
+            <div class="flex flex-col items-center">
+                <img src="img/profile.jpg" alt="ProfilePicture" class="w-full h-auto object-cover rounded-xl border-4 border-[#3A86FF]
                shadow-[0_15px_40px_rgba(0,0,0,0.4)]" />
 
-            <ul class="mt-[15px] p-0 flex justify-center gap-5">
-                <li class="list-none w-[45px] h-[45px] rounded-[10px] cursor-pointer text-[20px]
+                <ul class="mt-[15px] p-0 flex justify-center gap-5 text-white">
+                    <li class="list-none w-[45px] h-[45px] rounded-[10px] cursor-pointer text-[20px]
                  flex items-center justify-center
                  transition-all duration-300 hover:-translate-y-[3px]
                  hover:shadow-[0_10px_25px_rgba(58,134,255,0.4)] hover:text-[#3A86FF]">
-                    <a class="w-full h-full flex items-center justify-center no-underline text-inherit"
-                        href="https://www.facebook.com/seyanzxc/" target="_blank" rel="noreferrer">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                </li>
+                        <a class="w-full h-full flex items-center justify-center no-underline text-inherit"
+                            href="https://www.facebook.com/seyanzxc/" target="_blank" rel="noreferrer">
+                            <i class="fa fa-facebook text-white" aria-hidden="true"></i>
+                        </a>
+                    </li>
 
-                <li class="list-none w-[45px] h-[45px] rounded-[10px] cursor-pointer text-[20px]
+                    <li class="list-none w-[45px] h-[45px] rounded-[10px] cursor-pointer text-[20px]
                  flex items-center justify-center
                  transition-all duration-300 hover:-translate-y-[3px]
                  hover:shadow-[0_10px_25px_rgba(58,134,255,0.4)] hover:text-[#3A86FF]">
-                    <a class="w-full h-full flex items-center justify-center no-underline text-inherit"
-                        href="https://www.instagram.com/seyanism/" target="_blank" rel="noreferrer">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </li>
+                        <a class="w-full h-full flex items-center justify-center no-underline text-inherit"
+                            href="https://www.instagram.com/seyanism/" target="_blank" rel="noreferrer">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
 
-                <li class="list-none w-[45px] h-[45px] rounded-[10px] cursor-pointer text-[20px]
+                    <li class="list-none w-[45px] h-[45px] rounded-[10px] cursor-pointer text-[20px]
                  flex items-center justify-center
                  transition-all duration-300 hover:-translate-y-[3px]
                  hover:shadow-[0_10px_25px_rgba(58,134,255,0.4)] hover:text-[#3A86FF]">
-                    <a class="w-full h-full flex items-center justify-center no-underline text-inherit"
-                        href="https://github.com/SeanKennethAx" target="_blank" rel="noreferrer">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
+                        <a class="w-full h-full flex items-center justify-center no-underline text-inherit"
+                            href="https://github.com/SeanKennethAx" target="_blank" rel="noreferrer">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -124,7 +152,7 @@
         <div class="mx-auto max-w-7xl">
             <div class="space-y-3">
                 <h2 class="text-3xl md:text-4xl font-bold text-center">
-                    What I Do
+                    My Skills
                 </h2>
                 <p class="text-gray-400 text-center">
                     I am passionate about building modern web applications and designing
@@ -167,92 +195,138 @@
         </div>
     </section>
 
-    <section class="bg-[#23354d] py-20 px-6 mt-10">
+    <section id="projects" class="bg-[#23354d] py-14 px-6 mt-10">
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-4xl font-bold text-white mb-4">My Projects</h2>
 
-            <p class="text-gray-500 mb-14">
+            <p class="text-gray-300 mb-14">
                 Every project is a unique endeavor. See what we have accomplished so far!
             </p>
             <div class="grid md:grid-cols-3 gap-8">
-                <div
-                    class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6">
-                    <div class="bg-gray-100 rounded-xl p-4 mb-6">
-                        <img src="STIDavaoCollege.png" alt="Project 1" class="rounded-lg w-full object-cover">
-                    </div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2">
-                        STI College Davao RAF
-                    </h3>
-
-                    <p class="text-gray-500 text-sm">
-                        Blank
-                    </p>
-                </div>
-
-                <div
-                    class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6">
-                    <div class="bg-gray-100 rounded-xl p-4 mb-6">
-                        <img src="https://via.placeholder.com/500x300" alt="Project 2"
-                            class="rounded-lg w-full object-cover">
+                <div class="bg-white pb-6 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 transform
+                    hover:-translate-y-2 cursor-pointer">
+                    <div>
+                        <img src="img/raf.png" alt="Project 1" class="h-60 w-full rounded-tl-xl rounded-tr-xl">
                     </div>
 
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2">
-                        Blank
-                    </h3>
-
-                    <p class="text-gray-500 text-sm">
-                    <div
-                        class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6">
-                        <div class="bg-gray-100 rounded-xl p-4 mb-6">
-                            <img src="FigmaProject.png" alt="Project 3" class="rounded-lg w-full object-cover">
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">
-                            Figma
+                    <div class="px-4">
+                        <h3 class="mt-3 text-lg font-semibold text-gray-800">
+                            STI College Davao RAF
                         </h3>
 
-                        <p class="text-gray-500 text-sm">
-                            Blank.
+                        <p class="text-gray-500 text-xs">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum.
                         </p>
                     </div>
                 </div>
-            </div>
-    </section>
 
-    <section class="bg-[#23354d] py-20  px-6 mt-10">
-        <div class="max-w-5xl mx-auto bg-[#23354d] text-white py-12 px-6 shadow-2xl">
-            <div class="flex justify-center space-x-6 mb-8">
-                <a href="#"
-                    class="w-12 h-12 flex items-center justify-center bg-gray-200 text-black rounded-full hover:bg-gray-400 transition">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#"
-                    class="w-12 h-12 flex items-center justify-center bg-gray-200 text-black rounded-full hover:bg-gray-400 transition">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#"
-                    class="w-12 h-12 flex items-center justify-center bg-gray-200 text-black rounded-full hover:bg-gray-400 transition">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#"
-                    class="w-12 h-12 flex items-center justify-center bg-gray-200 text-black rounded-full hover:bg-gray-400 transition">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="#"
-                    class="w-12 h-12 flex items-center justify-center bg-gray-200 text-black rounded-full hover:bg-gray-400 transition">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </div>
+                <div
+                    class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+                    <div>
+                        <img src="img/figma-project.png" alt="Project 2"
+                            class="h-60 w-full object-cover object-top rounded-tl-xl rounded-tr-xl">
+                    </div>
 
-            <div class="flex justify-center space-x-8 text-sm mb-8">
-                <a href="#" class="hover:text-gray-400 transition">Home</a>
-                <a href="#" class="hover:text-gray-400 transition">News</a>
-                <a href="#" class="hover:text-gray-400 transition">About</a>
-                <a href="#" class="hover:text-gray-400 transition">Contact Us</a>
-                <a href="#" class="hover:text-gray-400 transition">Our Team</a>
-            </div>
+                    <div class="px-4 py-4">
+                        <h3 class="text-lg font-semibold text-gray-800">
+                            UI/UX School Project
+                        </h3>
 
+                        <p class="text-gray-500 text-xs">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions
+                            of
+                            Lorem Ipsum..
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6">
+                    <div class="bg-gray-100 rounded-xl p-4 mb-6">
+                        <img src="FigmaProject.png" alt="Project 3" class="rounded-lg w-full object-cover">
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">
+                        Figma
+                    </h3>
+
+                    <p class="text-gray-500 text-sm">
+                        Blank.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <footer class="bg-white py-8 px-5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-5 items-center justify-between">
+            <div>
+                <div class="text-[22px] font-bold text-[#0B1C2D]">Seyanism.</div>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#"
+                    class="w-12 h-12 flex items-center justify-center bg-gray-200 text-black rounded-full hover:bg-gray-400 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24"><!-- Icon from Unicons by Iconscout - https://github.com/Iconscout/unicons/blob/master/LICENSE -->
+                        <path fill="currentColor"
+                            d="M15.12 5.32H17V2.14A26 26 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73" />
+                    </svg>
+                </a>
+                <a href="#"
+                    class="w-12 h-12 flex items-center justify-center bg-gray-200 text-black rounded-full hover:bg-gray-400 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24"><!-- Icon from Akar Icons by Arturo Wibawa - https://github.com/artcoholic/akar-icons/blob/master/LICENSE -->
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#"
+                    class="w-12 h-12 flex items-center justify-center bg-gray-200 text-black rounded-full hover:bg-gray-400 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24"><!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE -->
+                        <path fill="currentColor"
+                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
+                    </svg>
+                </a>
+                <a href="#"
+                    class="w-12 h-12 flex items-center justify-center bg-gray-200 text-black rounded-full hover:bg-gray-400 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24"><!-- Icon from BoxIcons by Atisa - https://creativecommons.org/licenses/by/4.0/ -->
+                        <path
+                            d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28a5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934a8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934c0-.528-.081-1.097-.202-1.625z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="#"
+                    class="w-12 h-12 flex items-center justify-center bg-gray-200 text-black rounded-full hover:bg-gray-400 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 24 24"><!-- Icon from Tabler Icons by Paweł Kuna - https://github.com/tabler/tabler-icons/blob/master/LICENSE -->
+                        <path fill="currentColor"
+                            d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H6a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5zM9 9v6a1 1 0 0 0 1.514.857l5-3a1 1 0 0 0 0-1.714l-5-3A1 1 0 0 0 9 9" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
